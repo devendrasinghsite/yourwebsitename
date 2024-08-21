@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEO Quiz by King Peedia</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    .seo-quiz {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+    }
+
+    .question {
+        margin-bottom: 20px;
+    }
+
+    .option {
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    .option.selected {
+        color: blue;
+    }
+
+    #timer {
+        text-align: center;
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    #view-result {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    #view-result:hover {
+        background-color: #45a049;
+    }
+
+    .correct-answer {
+        background-color: #d4edda;
+    }
+
+    .score {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        margin-top: 20px;
+    }
+
+    .notification {
+        text-align: center;
+        color: red;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+<h1>SEO Quiz by King Peedia</h1>
+<div class="seo-quiz">
+    <div id="timer">15:00</div>
+    <div class="question">
+    <p>1. Which of the following is NOT a part of off-page SEO?</p>
+    <ul>
+        <li class="option">A. Social bookmarking</li>
+        <li class="option">B. Internal linking</li>
+        <li class="option">C. Guest blogging</li>
+        <li class="option">D. Link building</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>2. What is the primary purpose of off-page SEO?</p>
+    <ul>
+        <li class="option">A. To optimize website structure</li>
+        <li class="option">B. To improve website speed</li>
+        <li class="option">C. To increase website visibility and authority</li>
+        <li class="option">D. To enhance website design</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>3. Which of the following is an effective off-page SEO strategy for increasing website backlinks?</p>
+    <ul>
+        <li class="option">A. Article spinning</li>
+        <li class="option">B. Forum posting</li>
+        <li class="option">C. Cloaking</li>
+        <li class="option">D. Duplicate content creation</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>4. What is the term used for the process of acquiring backlinks from other websites to your own?</p>
+    <ul>
+        <li class="option">A. On-page optimization</li>
+        <li class="option">B. Link building</li>
+        <li class="option">C. Keyword research</li>
+        <li class="option">D. Social bookmarking</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>5. Which of the following is an important metric for evaluating the quality of backlinks?</p>
+    <ul>
+        <li class="option">A. Quantity of backlinks</li>
+        <li class="option">B. Anchor text diversity</li>
+        <li class="option">C. PageRank</li>
+        <li class="option">D. Website traffic</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>6. What term describes the process of acquiring backlinks organically, without direct solicitation?</p>
+    <ul>
+        <li class="option">A. White hat link building</li>
+        <li class="option">B. Black hat link building</li>
+        <li class="option">C. Gray hat link building</li>
+        <li class="option">D. Red hat link building</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>7. Which of the following is an example of off-page SEO activity that can help establish brand authority?</p>
+    <ul>
+        <li class="option">A. Optimizing meta descriptions</li>
+        <li class="option">B. Building backlinks from reputable websites</li>
+        <li class="option">C. Internal linking</li>
+        <li class="option">D. Keyword research</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>8. What is the practice of commenting on blogs and forums with the intention of building backlinks called?</p>
+    <ul>
+        <li class="option">A. Blog spamming</li>
+        <li class="option">B. Guest blogging</li>
+        <li class="option">C. Article marketing</li>
+        <li class="option">D. Blog commenting</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>9. Which of the following is an example of off-page SEO activity that can help improve website authority?</p>
+    <ul>
+        <li class="option">A. Adding alt tags to images</li>
+        <li class="option">B. Building backlinks from high-quality websites</li>
+        <li class="option">C. Optimizing meta descriptions</li>
+        <li class="option">D. Enhancing website navigation</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>10. Which of the following is an effective strategy for building backlinks through content marketing?</p>
+    <ul>
+        <li class="option">A. Using excessive keywords in anchor text</li>
+        <li class="option">B. Publishing low-quality content</li>
+        <li class="option">C. Guest blogging on reputable websites</li>
+        <li class="option">D. Replicating content across multiple domains</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>11. What term describes the process of creating multiple versions of an article with slight variations to publish across different websites?</p>
+    <ul>
+        <li class="option">A. Article syndication</li>
+        <li class="option">B. Article spinning</li>
+        <li class="option">C. Article marketing</li>
+        <li class="option">D. Article aggregation</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>12. Which of the following is an example of off-page SEO activity that can help increase website traffic?</p>
+    <ul>
+        <li class="option">A. Optimizing title tags</li>
+        <li class="option">B. Internal linking</li>
+        <li class="option">C. Social media engagement</li>
+        <li class="option">D. Creating XML sitemap</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>13. What term describes the process of actively engaging with online communities to promote a website or content?</p>
+    <ul>
+        <li class="option">A. Social bookmarking</li>
+        <li class="option">B. Social media marketing</li>
+        <li class="option">C. Social networking</li>
+        <li class="option">D. Social listening</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>14. Which of the following is an example of off-page SEO activity that can help enhance website visibility?</p>
+    <ul>
+        <li class="option">A. Directory submission</li>
+        <li class="option">B. Content optimization</li>
+        <li class="option">C. Improving website navigation</li>
+        <li class="option">D. Optimizing meta tags</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>15. Which of the following is an important consideration when evaluating the relevance of a backlink?</p>
+    <ul>
+        <li class="option">A. Domain age</li>
+        <li class="option">B. Anchor text</li>
+        <li class="option">C. Page load speed</li>
+        <li class="option">D. Number of outbound links</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>16. Which of the following factors is crucial for effective off-page SEO?</p>
+    <ul>
+        <li class="option">A. Keyword density</li>
+        <li class="option">B. Website structure</li>
+        <li class="option">C. Content uniqueness</li>
+        <li class="option">D. Domain authority</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>17. Which of the following is an example of off-page SEO activity that can help improve search engine rankings?</p>
+    <ul>
+        <li class="option">A. Submitting XML sitemap</li>
+        <li class="option">B. Building backlinks from relevant websites</li>
+        <li class="option">C. Optimizing meta descriptions</li>
+        <li class="option">D. Internal linking</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>18. Which of the following is NOT a recommended practice for off-page SEO?</p>
+    <ul>
+        <li class="option">A. Building backlinks from irrelevant websites</li>
+        <li class="option">B. Guest posting on reputable blogs</li>
+        <li class="option">C. Engaging with social media communities</li>
+        <li class="option">D. Participating in online forums</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>19. Which of the following is an example of a natural backlink?</p>
+    <ul>
+        <li class="option">A. A link from a paid advertisement</li>
+        <li class="option">B. A link from a press release distribution site</li>
+        <li class="option">C. A link from a blog post written by an industry expert</li>
+        <li class="option">D. A link from a website in an unrelated niche</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>20. Which of the following is an effective off-page SEO technique for increasing website visibility?</p>
+    <ul>
+        <li class="option">A. Keyword stuffing</li>
+        <li class="option">B. Directory submission</li>
+        <li class="option">C. Meta tag optimization</li>
+        <li class="option">D. Content duplication</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>21. What is the term used for the process of removing bad or low-quality backlinks to a website?</p>
+    <ul>
+        <li class="option">A. Backlink analysis</li>
+        <li class="option">B. Backlink auditing</li>
+        <li class="option">C. Backlink disavowal</li>
+        <li class="option">D. Backlink monitoring</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>22. Which of the following factors is NOT typically considered when assessing the authority of a website for backlinking purposes?</p>
+    <ul>
+        <li class="option">A. Domain age</li>
+        <li class="option">B. Content relevancy</li>
+        <li class="option">C. Website traffic</li>
+        <li class="option">D. Number of outbound links</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>23. What term describes the process of sharing content across various social media platforms to increase its visibility?</p>
+    <ul>
+        <li class="option">A. Social bookmarking</li>
+        <li class="option">B. Social networking</li>
+        <li class="option">C. Social media optimization</li>
+        <li class="option">D. Social media marketing</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>24. Which of the following is an example of an off-page SEO technique that focuses on engaging with online communities?</p>
+    <ul>
+        <li class="option">A. Directory submission</li>
+        <li class="option">B. Social media marketing</li>
+        <li class="option">C. Article submission</li>
+        <li class="option">D. Meta tag optimization</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>25. Which of the following is a legitimate way to acquire backlinks?</p>
+    <ul>
+        <li class="option">A. Paying for links</li>
+        <li class="option">B. Excessive reciprocal linking</li>
+        <li class="option">C. Guest blogging on relevant websites</li>
+        <li class="option">D. Article spinning</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>26. What term describes the process of removing low-quality backlinks to avoid Google penalties?</p>
+    <ul>
+        <li class="option">A. Backlink analysis</li>
+        <li class="option">B. Backlink disavowal</li>
+        <li class="option">C. Backlink auditing</li>
+        <li class="option">D. Backlink monitoring</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>27. Which of the following is NOT a social media platform commonly used for off-page SEO?</p>
+    <ul>
+        <li class="option">A. Facebook</li>
+        <li class="option">B. Twitter</li>
+        <li class="option">C. LinkedIn</li>
+        <li class="option">D. Amazon</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>28. Which of the following is an important metric for evaluating the quality of backlinks?</p>
+    <ul>
+        <li class="option">A. Quantity of backlinks</li>
+        <li class="option">B. Anchor text diversity</li>
+        <li class="option">C. PageRank</li>
+        <li class="option">D. Website traffic</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>29. Which off-page SEO technique involves submitting your website URL to online directories?</p>
+    <ul>
+        <li class="option">A. Blog commenting</li>
+        <li class="option">B. Directory submission</li>
+        <li class="option">C. Social bookmarking</li>
+        <li class="option">D. Article submission</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>30. Which of the following is NOT a type of off-page SEO activity?</p>
+    <ul>
+        <li class="option">A. Social media engagement</li>
+        <li class="option">B. Email marketing</li>
+        <li class="option">C. Internal linking</li>
+        <li class="option">D. Influencer outreach</li>
+    </ul>
+</div>
+
+    <!-- Add more questions as needed -->
+
+    <button id="view-result">View Result</button>
+
+    <div class="score" id="score"></div>
+
+    <div class="notification" id="notification"></div>
+</div>
+
+<script>
+    var timer = 900; // 15 minutes in seconds
+    var timerDisplay = document.getElementById('timer');
+    var questions = document.querySelectorAll('.question');
+    var resultViewed = false;
+    var countdown;
+
+    function startTimer() {
+        var minutes, seconds;
+
+        countdown = setInterval(function() {
+            minutes = parseInt(timer / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+
+            timerDisplay.textContent = minutes + ":" + seconds;
+
+            if (--timer < 0) {
+                clearInterval(countdown);
+                timerDisplay.textContent = "Time's up!";
+                document.getElementById('view-result').click(); // Automatically show result on timeout
+            }
+        }, 1000);
+    }
+
+    // Array to store correct answers
+    var correctAnswers = ["B", "C", "B", "B", "C", "A", "B", "D", "B", "C",  "B", "C", "B", "A", "B", "D", "B", "A", "C", "B",  "C", "D", "C", "B", "C", "B", "D", "B", "C"]; // Add correct answers for each question
+
+    // Calculate score
+    function calculateScore() {
+        var score = 0;
+
+        questions.forEach(function(question, index) {
+            var selectedOption = question.querySelector('.option.selected');
+            if (selectedOption && selectedOption.textContent.charAt(0) === correctAnswers[index]) {
+                score++;
+            }
+        });
+
+        return score;
+    }
+
+    // Toggle selection
+    function toggleSelection(questionIndex, selectedOption) {
+        if (!resultViewed) {
+            var options = questions[questionIndex].querySelectorAll('.option');
+            options.forEach(function(option) {
+                option.classList.remove('selected');
+            });
+            selectedOption.classList.add('selected');
+
+            if (!countdown) {
+                startTimer();
+            }
+        }
+    }
+
+    // Show result
+    document.getElementById('view-result').addEventListener('click', function() {
+        if (resultViewed) return;
+
+        var options = document.querySelectorAll('.option');
+        var selectedCount = document.querySelectorAll('.selected').length;
+        var score = calculateScore();
+
+        if (selectedCount !== questions.length) {
+            document.getElementById('notification').textContent = "Please select an answer for each question.";
+            return;
+        } else {
+            document.getElementById('notification').textContent = ""; // Clear notification
+        }
+
+        clearInterval(countdown); // Stop the timer
+
+        options.forEach(function(option) {
+            if (correctAnswers[parseInt(option.parentNode.parentNode.getAttribute('data-question'), 10)] === option.textContent.charAt(0)) {
+                option.classList.add('correct-answer');
+            }
+        });
+
+        document.getElementById('score').textContent = "Your Score: " + score + " out of " + correctAnswers.length;
+        resultViewed = true;
+
+        // Disable click events on options
+        options.forEach(function(option) {
+            option.style.pointerEvents = "none";
+        });
+    });
+
+    // Add click event listeners to options
+    questions.forEach(function(question, questionIndex) {
+        question.querySelectorAll('.option').forEach(function(option) {
+            option.addEventListener('click', function() {
+                toggleSelection(questionIndex, option);
+            });
+        });
+        question.setAttribute('data-question', questionIndex);
+    });
+</script>
+</body>
+</html>
